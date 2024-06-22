@@ -1,0 +1,104 @@
+/* styles.css */
+
+/* Basic styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Styling the header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Styling the main content */
+main {
+    padding: 1em;
+}
+
+/* Styling sections */
+section {
+    background-color: white;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+/* Styling the footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Intermediate styles */
+
+/* Styling links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Adding styles for h1 and h2 */
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Adding a responsive layout */
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+    }
+    section {
+        width: 45%;
+    }
+}
+
+/* Advanced styles */
+
+/* Adding a smooth transition effect */
+section {
+    transition: transform 0.2s;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+/* Adding a simple animation */
+header {
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Styling the footer for a sticky footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
