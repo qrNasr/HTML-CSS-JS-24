@@ -1,0 +1,25 @@
+    p{
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+        /* you can use the below */
+        padding: 25px 50px 75px 100px;
+        /* left top bottom right */
+    }
+/*
+
+The CSS code `padding: 25px 50px 75px 100px;` sets the padding for an element, with each value representing the top, right, bottom, and left padding, respectively. Here's a breakdown of the values:
+
+- Top padding: 25 pixels
+- Right padding: 50 pixels
+- Bottom padding: 75 pixels
+- Left padding: 100 pixels
+
+This notation allows for setting different padding values for each side of an element, providing precise control over the spacing around the content.
+
+The search results provide various examples and explanations of the `padding` property in CSS, reinforcing the understanding of how the values are interpreted and applied in different contexts.
+
+Overall, the explanation aligns with the provided search results and accurately describes the usage of the `padding` property with multiple values.
+
+*/
