@@ -1,0 +1,17 @@
+h1{
+    border-radius: 10;
+    background-color:DodgerBlue;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 5px solid tomato;
+    /* this will set border bottom to 5px soild tomatao color */
+    border-top: 5px sandybrown solid;
+    border-left: 5px violet solid;
+    border-right: 5px dodgerblue solid;
+    
+
+}
