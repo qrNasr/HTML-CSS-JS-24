@@ -1,0 +1,74 @@
+table, th, td {
+  /* standard table */
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  /* The CSS code width: 100%; applied to a table sets the width of the table to 100% of its containing element. In this context, the table will occupy the entire horizontal space available within its container. */
+}
+
+/* border collaps */
+table {
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 70px;
+}
+
+table {
+  width: 50%;
+  /* The CSS code width: 50%; applied to a table sets the width of the table to 50% of its containing element. This means that the table will occupy half of the available horizontal space within its container. */
+}
+
+/* Horizontal Alignment
+
+The text-align property sets the horizontal alignment (like left, right, or center) of the content in <th> or <td>.
+
+By default, the content of <th> elements are center-aligned and the content of <td> elements are left-aligned.
+
+To center-align the content of  <td> elements as well, use text-align: center: */
+
+td {
+  text-align: center;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+/* Table Padding */
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Horizontal Dividers */
+th, td {
+  /* Add the border-bottom property to <th> and <td> for horizontal dividers: */
+  border-bottom: 1px solid #ddd;
+}
+/* Hoverable Table */
+tr:hover {background-color: coral;}
+/* Striped Tables */
+tr:nth-child(odd) {background-color: lightblue;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+/* Table Color */
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Responsive Table */
+
