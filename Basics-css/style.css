@@ -1,0 +1,39 @@
+    p{
+        /* margins */
+        margin: 0;
+        /* padding */
+        padding: 0;
+        /* font */
+        font-family: 'Roboto', sans-serif;
+        /* font size */
+        font-size: 1.2em;
+        /* line height */
+        line-height: 1.5em;
+        /* color */
+        color: #333;
+        /* text align */
+        text-align: center;
+        /* text decoration */
+        text-decoration: none;
+        /* text transform */
+        text-transform: uppercase;
+        /* letter spacing */
+        letter-spacing: 1px;
+        /* word spacing */
+        word-spacing: 2px;
+        /* font weight */
+        font-weight: 300;
+        /* font style */
+        font-style: normal;
+        /* font variant */
+        font-variant: normal;
+        /* font stretch */
+        font-stretch: normal;
+        /* font size adjust */
+        font-size-adjust: none;
+        /* font size */
+        font-size: 1.2em;
+        /* font size */
+        
+
+    }
