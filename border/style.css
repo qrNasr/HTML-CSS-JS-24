@@ -1,0 +1,57 @@
+    p{
+        color: blue;
+        border-style: dashed; /*dashed line */
+        border-style: solid;
+        border-style: double;
+        border-style: groove;
+        border-style: inherit;
+        border-style: none;
+        border-style: dotted;
+        border-style: ridge;
+        border-style: inset;
+        border-style: outset;
+        border-style: hidden;
+        border-style: initial;
+        border-style: revert;
+        border-style: revert-layer;
+        border-width: 5px;
+        border-color: red;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+        /* uncomment the below to see the text in real vies - nasr */
+        text-indent: 50px;
+        line-height: 30px;
+        letter-spacing: 5px;
+        word-spacing: 10px;
+        background-color: yellow;
+        padding: 10px;
+        margin: 10px;
+        float: right;
+        clear: both;
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 50%;
+        height: 50%;
+        background-color: red;
+        opacity: 0.5;
+        z-index: 1;
+        transform: rotate(45deg);
+        transition: 1s;
+        animation: 1s;
+        animation-name: myAnimation;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+
+    }
