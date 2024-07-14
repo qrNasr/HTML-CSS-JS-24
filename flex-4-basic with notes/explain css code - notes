@@ -1,0 +1,20 @@
+In this example, we have a container element (<div class="container">) that serves as the flex container. It contains three child elements (<div class="item">) that will be laid out using flexbox.
+The CSS code sets the following properties:
+.container:
+display: flex; creates a flex container.
+flex-direction: row; sets the direction of the main axis to be horizontal, aligning the child elements in a row.
+justify-content: space-between; positions the child elements with equal space between them.
+align-items: center; aligns the child elements vertically at the center of the container.
+height: 200px; sets the height of the container to 200 pixels.
+background-color: #f2f2f2; sets the background color of the container.
+padding: 20px; adds padding around the container.
+.item:
+flex: 1; allows the child elements to grow and fill the available space equally.
+background-color: lightblue; sets the background color of the child elements.
+border: 1px solid blue; adds a border around the child elements.
+border-radius: 5px; adds rounded corners to the child elements.
+padding: 10px; adds padding inside the child elements.
+margin: 10px; adds margin around the child elements.
+By opening this HTML file in a web browser, you will see the flexbox layout with three child elements aligned in a row, evenly spaced with equal margins and padding.
+This example demonstrates the key elements and requirements of flexbox, including the flex container, flex items, and various flexbox properties to control the layout.
+Feel free to modify the HTML and CSS code to experiment with different flexbox properties and see how they affect the layout.
