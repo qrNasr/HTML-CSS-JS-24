@@ -1,0 +1,55 @@
+/* CSS styles for static position */
+.static {
+  /* .static: Represents the default position of an element in the normal document flow. It does not require any additional positioning properties. */
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:hotpink;
+}
+
+/* CSS styles for relative position */
+.relative {
+  /* .relative: Represents a position relative to its normal position. The top and left properties are used to offset the element from its original position. */
+  position: relative;
+  top: 20px;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  background-color:blue;
+}
+
+/* CSS styles for fixed position */
+.fixed {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+}
+
+/* CSS styles for absolute position */
+.absolute {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  background-color: #fff;
+}
+
+/* CSS styles for sticky position */
+.sticky {
+  position: sticky;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+
+}
+
+/* In the above code, each CSS class represents a different position:
+.static: Represents the default position of an element in the normal document flow. It does not require any additional positioning properties.
+.relative: Represents a position relative to its normal position. The top and left properties are used to offset the element from its original position.
+.fixed: Represents a position that is fixed relative to the viewport. The top and right properties are used to position the element.
+.absolute: Represents a position that is absolute relative to its closest positioned ancestor. The top and left properties are used to position the element.
+.sticky: Represents a position that is initially static but becomes fixed once it reaches a specified scroll position. The top property is used to specify the offset at which the element becomes sticky.
+You can apply these CSS classes to your HTML elements as needed. For example: */
