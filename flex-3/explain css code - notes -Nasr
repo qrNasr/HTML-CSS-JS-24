@@ -1,0 +1,69 @@
+
+#Notes about flex.
+flex direction default is horizontal on x axis , from left to right
+Y axis from Top to bottom
+default flex direction is row.
+use flex-direction:column; to keep them stacked vertically.
+flex-direction:row-reverse; to keep them stacked vertically from right to left.
+flex-direction:column-reverse; to keep them stacked vertically from bottom to top.
+flex-direction:row; to keep them stacked horizontally from left to right.
+flex-direction:column; to keep them stacked vertically from top to bottom.
+
+
+#Position item in the main axis using justify-content prop.
+justify-content will postion items in a row with equal space.
+justify-content:flex-start; will position items in a row from left to right.
+justify-content:space-between; will position items in a row with equal space between them.
+justify-content:space-around; will position items in a row with equal space around them.
+justify-content:space-evenly; will position items in a row with equal space between them.
+justify-content:flex-end; will position items in a row from right to left.
+justify-content:center; will position items in a row from center.
+justify-content:stretch; will position items in a row from center and stretch them to fill the available
+space.
+justify-content:space-between; will position items in a row from center and stretch them to fill the
+available space.
+
+#Margins
+margin:auto; will keep equal margin from all sides
+margin:0 auto; will keep equal margin from left and right and 0 margin from top and
+bottom.
+margin:auto 0 will keep equal 0 margin from left and right and auto margin from top and
+bottom.
+margin:0 auto 0
+margin:0 auto 0 auto
+
+To taget an itemś margin , give it a class name
+.name{
+   margin:0 auto; for instance
+
+}
+flex-start: align items to the start of the main axis
+flex-end: align items to the end of the main axis
+center: align items to the center of the main axis
+baseline: align items to the baseline of the main axis
+stretch: stretch items to fill the main axis
+
+
+#Position item in the cross axis
+flex-start: align items to the start of the cross axis
+flex-end: align items to the end of the cross axis
+center: align items to the center of the cross axis
+baseline: align items to the baseline of the cross axis
+stretch: stretch items to fill the cross axis
+flex-grow: 1; to make the item grow to fill the available space
+flex-shrink: 1; to make the item shrink to fit the available space
+flex-basis: 0; to make the item take up no space.
+flex: 1 1 0; to make the item grow to fill the available space and shrink to fit the available space
+flex: 0 1 auto; to make the item take up no space and shrink to fit the available space
+flex: 1 0 auto; to make the item grow to fill the available space and take up no space
+flex: 0 0 auto; to make the item take up no space and take up no space.
+flex: 1 1 auto; to make the item grow to fill the available space and shrink to fit the available space
+flex: 0 1 auto; to make the item take up no space and shrink to fit the available space
+flex: 1 0 auto; to make the item grow to fill the available space and take up no space
+
+
+flex-direction:row-reverse;
+flex-direction:column-reverse;
+flex-direction:row;
+flex-direction:column;
+

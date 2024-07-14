@@ -1,0 +1,41 @@
+/* CSS styles for the ordered list */
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: hotpink;
+  padding: 10px;
+  margin: 0;
+  text-shadow: #6e6fdb;
+  word-spacing: normal;
+}
+
+/* CSS styles for the list items */
+.cont ol {
+  display: block;
+  list-style-type: decimal;
+  margin: 0;
+  padding: 0;
+
+}
+
+.cont li {
+  margin-bottom: 10px;
+}
+
+/* CSS styles for hover effect */
+.cont:hover {
+  background-color: blue;
+  color: #6e6fdb;
+  border: solid 2px blue;
+}
+
+
