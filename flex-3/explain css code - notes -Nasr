@@ -3,6 +3,31 @@
 flex direction default is horizontal on x axis , from left to right
 Y axis from Top to bottom
 default flex direction is row.
+flex:1; is a shorthand of three propos (flex grow, flex shrink and flex basis)
+
+flex box will adjust any newly added items.
+
+to let the flex items take all space:
+.container > div{
+   flex:1; > flex:1; is shorthand for all the below.
+   flex-grow:1;
+   flex-shrink:1;
+   flex-basis:0;
+}
+
+to target certain flex child:
+.container > div:nth-child(2){
+   flex:2;
+   }
+
+or
+
+.container > .search{
+   flex:2;
+   }
+flex-item height:100% will work when you set the body to 100%
+
+
 use flex-direction:column; to keep them stacked vertically.
 flex-direction:row-reverse; to keep them stacked vertically from right to left.
 flex-direction:column-reverse; to keep them stacked vertically from bottom to top.
@@ -67,3 +92,201 @@ flex-direction:column-reverse;
 flex-direction:row;
 flex-direction:column;
 
+Positions in css
+absolute: the element is positioned relative to its first positioned (not static) ancestor element
+relative: the element is positioned relative to its normal position
+fixed: the element is positioned relative to the viewport, which means it always stays in the same place
+sticky: the element is positioned based on the user's scroll position
+static: the element is not positioned (static works as the default value)
+
+Grid system. how to make a grid layout?
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas: "header header header" "main main main" "footer footer footer";
+
+# align self
+align-self: start;
+align-self: end;
+align-self: center;
+align-self: baseline;
+align-self: stretch;
+align-self: flex-start;
+align-self: flex-end;
+align-self: flex-center;
+align-self: flex-baseline;
+align-self: flex-stretch;
+align-self: auto;
+align-self: normal;
+align-self: content;
+align-self: self-start;
+align-self: self-end;
+align-self: self-center;
+align-self: self-baseline;
+align-self: self-stretch;
+align-self: initial;
+align-self: inherit;
+align-self: unset;
+align-self: revert;
+align-self: revert-layer;
+
+The align-self property in CSS is used to align individual flex items within a flex container along the cross axis.
+
+It allows you to override the alignment set by the align-items property at the container level. Here's an explanation of each value:
+
+start, flex-start, self-start: These values align the flex item at the start of the cross axis within the container.
+end, flex-end, self-end: These values align the flex item at the end of the cross axis within the container.
+center, self-center: These values center the flex item vertically within the container.
+baseline, self-baseline: These values align the flex item along the baseline of the container.
+stretch, self-stretch: These values stretch the flex item to fill the entire cross axis of the container, regardless of its size.
+auto: This value uses the value provided by the align-items property on the parent container. If the element has no parent, then this value computes to stretch.
+initial: This value sets the align-self property to its initial value.
+inherit: This value inherits the align-self property from its parent element.
+unset: This value resets the align-self property to its default value.
+revert: This value reverts the align-self property to its inherited value.
+revert-layer: This value reverts the align-self property to its inherited value, but only for grid items.
+It's important to note that the align-self property is primarily used with flex containers, but its definition is currently being expanded to include grid items as well.
+
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: lightcoral solid ;
+}
+
+.logout{
+
+   align-self:flex-start;
+}
+
+.home{
+
+   align-self:flex-end;
+}
+
+
+
+#Flex wrap:
+the default is no-wrap;
+flex-wrap: wrap; will push the item to next row if no space.
+flex-wrap: wrap-reverse; will push the item to next row but in reverse order.
+
+The flex-wrap property in CSS is used to control how flex items wrap within a flex container. It
+allows you to specify whether flex items should wrap or not, and if they do wrap, how they
+should be positioned within the container.
+The flex-wrap property has two possible values:
+nowrap: This value specifies that flex items should not wrap. If the flex container's width
+is not large enough to contain all the flex items, they will be positioned on top of each other
+instead of wrapping to the next line.
+wrap: This value specifies that flex items should wrap. If the flex container's width is not
+large enough to contain all the flex items, they will be positioned on top of each other until
+the next line is reached, and then they will be positioned on the next line.
+The flex-wrap property is useful for creating layouts with multiple columns of flex items. For
+example, you could use it to create a two-column layout with a header and footer, and a
+scrollable middle section.
+The flex-wrap property is also useful for creating layouts with multiple rows of flex items. For
+example, you could use it to create a three-row layout with a header, a middle section,
+and a footer.
+
+examples of flex wrap:
+The flex-wrap property can be used to create a variety of layouts with flex items. Here are some
+examples:
+A two-column layout with a header and footer, and a scrollable middle section:
+<div class="flex-container">
+<div class="flex-item header">Header</div>
+<div class="flex-item middle">Middle</div>
+<div class="flex-item footer">Footer</div>
+</div>
+A three-row layout with a header, a middle section, and a footer:
+<div class="flex-container">
+<div class="flex-item header">Header</div>
+<div class="flex-item middle">Middle</div>
+<div class="flex-item footer">Footer</div>
+</div>
+A four-column layout with a header, a middle section, and a footer:
+<div class="flex-container">
+<div class="flex-item header">Header</div>
+<div class="flex-item middle">Middle</div>
+<div class="flex-item footer">Footer</div>
+</div>
+A five-column layout with a header, a middle section, and a footer:
+<div class="flex-container">
+<div class="flex-item header">Header</div>
+<div class="flex-item middle">Middle</div>
+<div class="flex-item footer">Footer</div>
+</div>
+A six-column layout with a header, a middle section, and a footer:
+<div class="flex-container">
+<div class="flex-item header">Header</div>
+<div class="flex-item middle">Middle</div>
+<div class="flex-item footer">Footer</div>
+</div>
+A seven-column layout with a header, a middle section, and a footer:
+<div class="flex-container">
+<div class="flex-item header">Header</div>
+<div class="flex-item middle">Middle</div>
+<div class="flex-item footer">Footer</div>
+</div>
+
+itmes to take into considerations and use while creating a flex.
+
+# order of lex items
+# flex-direction
+# flex-wrap
+# flex-flow
+# justify-content
+# align-items
+# align-content
+# align-self
+# flex-grow
+# flex-shrink
+# flex-basis
+# flex
+# order
+# align-self
+# align-items
+# align-content
+# justify-content
+# flex-flow
+# flex-wrap
+# flex-direction
+# flex
+
+# how to order items in flex box?
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  margin: 10px;
+}
+
+.item:nth-child(1) {
+  order: 3;
+}
+
+.item:nth-child(2) {
+  order: 1;
+}
+
+.item:nth-child(3) {
+  order: 2;
+}
