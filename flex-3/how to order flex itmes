@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+}
+
+.item1 {
+  order: 2; /* This item will be placed after other items */
+}
+
+.item2 {
+  order: 1; /* This item will be placed before other items */
+}
+
+.item3 {
+  /* This item will retain its default order */
+}
